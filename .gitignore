@@ -1,0 +1,7 @@
+/cmp/
+/sub/*
+/sym/*
+/stamp.bin
+
+!/sub/User/
+!/sym/User/

@@ -1,0 +1,25 @@
+************ Power Discrete BJT Electrical Circuit Model ***************
+** Product: MMBTH81
+** Package: SOT-23
+** PNP RF Transistor
+*-----------------------------------------------------------------
+*MMBTH81 C B E
+.SUBCKT MMBTH81 1 2 3
+Q1 1 2 3 M_MMBTH81
+
+.model M_MMBTH81 pnp
++ IS=1.364229E-15     BF=109           NF=1                  
++ ISE=1.59087E-16     NE=2             VAF=100
++ ISC=5.8e-9          BR=0.48          IKR=0.85
++ IKF=0.150527        RB=46.6          RBM=0.159       
++ IRB=1.51356E-6      RE=0.23          RC=1.0             
++ CJE=2.63E-12        VJE=0.80         MJE=0.335        
++ FC=0.5              CJC=2.77E-12     VJC=0.757        
++ MJC=0.158           XTB=1.59999      EG=0.86
++ XTI=3               TF=97.83e-12     ITF=69.29
++ VTF=10              XTF=599e-6
+
+.ENDS
+*-----------------------------------------------------------------
+** Creation: Jan.-15-2009  rev: 1.0
+** Fairchild Semiconductor
