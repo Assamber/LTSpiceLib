@@ -1,0 +1,50 @@
+***********************************************************
+*
+* PMEG1020EA
+*
+* Nexperia
+*
+* 2 A ultra low VF MEGA Schottky barrier rectifier
+* IFmax = 2A
+* VRmax = 10V
+* VFmax = 460mV   @ IF = 2A
+* IRmax = 3mA     @ VR = 10V
+* 
+*
+*
+*
+* Package pinning does not match Spice model pinning.
+* Package: SOD323
+*
+* Package Pin 1: Cathode
+* Package Pin 2: Anode
+*
+*
+* Extraction date (week/year): #
+* Simulator: SPICE2
+*
+***********************************************************
+*
+* The resistor R1 does not reflect 
+* a physical device. Instead it
+* improves modeling in the reverse 
+* mode of operation.
+*
+.SUBCKT PMEG1020EA 1 2
+D1 1 2 PMEG1020EA_SUB
+R1 1 2 1.2E+4
+*
+.MODEL PMEG1020EA_SUB D
++ IS = 0.000259
++ N = 1.014
++ RS = 0.0635
++ BV = 12
++ IBV = 0.01
++ CJO = 2.553E-10
++ VJ = 0.0331
++ M = 0.3788
++ FC = 0.5
++ EG = 0.69
++ XTI = 2
+.ENDS
+*
